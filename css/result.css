@@ -1,0 +1,134 @@
+body {
+    font-family: 'Hanken Gortesk' , sans-serif;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+p {
+    font-size: 18px;
+}
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    display: flex;
+    height: 400px;
+    width: 600px;
+    box-shadow: 11px 11px 20px 0px #f0f4ff;
+    border-radius: 15px
+}
+@media (max-width: 767px) {
+    .container {
+        flex-direction: column;
+    }
+}
+.container .result {
+    background: linear-gradient(to bottom, 	hsl(248, 100%, 72%) 10% , hsl(241, 81%, 54%) 90% );
+    width: 50%;
+    padding: 25px;
+    border-radius: 15px;
+}
+.container .result h4 {
+    color: #a9a7aa;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.container .result .score {
+    background: linear-gradient(180deg,  hsla(256, 72%, 46%, 1) ,  hsla(229, 74%, 42%, 18%));
+    width: 60px;
+    height: 40px;
+    color: #fff;
+    border-radius: 50%;
+    padding: 70px;
+    margin: 50px auto 25px;
+}
+.container .result .stats {
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 50%;
+    bottom: 50%;
+}
+.container .result .stats p {
+    color: #a9a7aa;
+}
+.container .result .text {
+    text-align: center;
+}
+.container .result .text h2 {
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.container .result .text p {
+    color: #a9a7aa;
+    line-height: 1.5;
+    padding: auto 15px;
+}
+.summary {
+    width: 50%;
+}
+.summary > h3 {
+    padding: 15px;
+    color: #47516a;
+    font-weight: 700;
+}
+.summary .reaction,
+.summary .memory,
+.summary .visual,
+.summary .verbal {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 8px;
+}
+.summary .reaction {
+    background-color: #fff6f5;
+}
+.summary .reaction .reac {
+    color: #fe8781;
+}
+.summary .memory .mem {
+    color: #fbc458;
+}
+.summary .verbal .ver {
+    color: #74dcc4;
+}
+.summary .visual .vis {
+    color: #585ee7;
+}
+.summary .reaction .reac,
+.summary .memory .mem,
+.summary .verbal .ver,
+.summary .visual .vis {
+    font-weight: 700;
+    flex: 1;
+    margin-left: 10px;
+}
+.summary .reaction  span,
+.summary .memory  span,
+.summary .verbal  span,
+.summary .visual  span {
+    color: #a9a7aa;
+}
+.summary .memory {
+    background-color: #fffbf2;
+}
+.summary .visual{
+    background-color: #f3f3ff;
+}
+.summary .verbal {
+    background-color: #f2fbfa; 
+}
+.summary > button {
+    background-color: #303b59;
+    color: white;
+    padding: 20px 88px;
+    margin: 0 30px;
+    border: none;
+    border-radius: 30px;
+}
